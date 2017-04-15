@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  margin: 0;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/*TYPOGRAPHY*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+table {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-aside {
+  background-color: yellow;
+  min-width: 200px;
+}
+
+.nav-search {
+  background-color: teal;
+}
+
+.main-content {
+  background-color: red;
+}
