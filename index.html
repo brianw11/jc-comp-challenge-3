@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Language" content="en">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
   <title>Some Cheesy HR Site</title>
 </head>
@@ -13,16 +14,138 @@
 <body>
   <aside class="nav-aside">
     <nav>
+      <div class="user-block">
+        <div class="user-image" alt="Avatar image of the currently logged in user"></div>
+        <p class="user-info">
+          <h6 class="user-name">The Dude</h6>
+          <div class="user-dropdown"></div>
+        </p>
+      </div>
 
+      <section class="nav-main">
+        <h4>Main</h4>
+        <div class="nav-main-content nav-home">
+          <i class="fa fa-home" aria-hidden="true" aria-label="Home"></i>
+          <!-- <div class="nav-icon icon-home" aria-label="Home"></div> -->
+          <a href="#" class="nav-link">Home</a>
+        </div>
+
+        <div class="nav-main-content nav-jobs">
+          <i class="fa fa-briefcase" aria-hidden="true" aria-label="Jobs"></i>
+          <!-- <div class="nav-icon icon-jobs" aria-label="Jobs"></div> -->
+          <a href="#" class="nav-link">Jobs</a>
+        </div>
+
+        <div class="nav-main-content nav-resumes">
+          <i class="fa fa-file-text" aria-hidden="true" aria-label="Resumes"></i>
+          <!-- <div class="nav-icon icon-resumes" aria-label="Resumes"></div> -->
+          <a href="#" class="nav-link">Resumes</a>
+        </div>
+
+        <div class="nav-main-content nav-skills">
+          <i class="fa fa-tasks" aria-hidden="true" aria-label="Skills"></i>
+          <!-- <div class="nav-icon icon-skills" aria-label="Skills"></div> -->
+          <a href="#" class="nav-link">Skills</a>
+        </div>
+
+        <div class="nav-main-content nav-calendar">
+          <i class="fa fa-calendar" aria-hidden="true" aria-label="Calendar"></i>
+          <!-- <div class="nav-icon icon-calendar" aria-label="Calendar"></div> -->
+          <a href="#" class="nav-link">Calendar</a>
+        </div>
+      </section>
+
+      <section class="nav-admin">
+        <h4>Admin</h4>
+        <div class="nav-admin-content nav-users">
+          <i class="fa fa-users" aria-hidden="true" aria-label="Users"></i>
+          <!-- <div class="nav-icon icon-users" aria-label="Users"></div> -->
+          <a href="#" class="nav-link">Users</a>
+        </div>
+
+        <div class="nav-admin-content nav-locations">
+          <i class="fa fa-map-marker" aria-hidden="true" aria-label="Locations"></i>
+          <!-- <div class="nav-icon icon-locations" aria-label="Locations"></div> -->
+          <a href="#" class="nav-link">Locations</a>
+        </div>
+
+        <div class="nav-admin-content nav-archenemies">
+          <i class="fa fa-sitemap" aria-hidden="true" aria-label="Workflows"></i>
+          <!-- <div class="nav-icon icon-archenemies" aria-label="Archenemies"></div> -->
+          <a href="#" class="nav-link">Workflows</a>
+        </div>
+
+        <div class="nav-admin-content nav-listings nav-selected">
+          <i class="fa fa-newspaper-o" aria-hidden="true" aria-label="Listings" aria-selected="true"></i>
+          <!-- <div class="nav-icon icon-listings" aria-label="Listings" aria-selected="true"></div> -->
+          <a href="#" class="nav-link nav-link-listings">Job Listings</a>
+        </div>
+
+        <div class="nav-admin-content nav-social">
+          <i class="fa fa-share-alt" aria-hidden="true" aria-label="Social"></i>
+          <!-- <div class="nav-icon icon-social" aria-label="Social"></div> -->
+          <a href="#" class="nav-link">Social</a>
+        </div>
+      </section>
+
+      <section class="nav-categories">
+        <h4>Categories</h4>
+        <div class="checkboxes" aria-checked="true">
+          <!-- <div class="box-icon sidekicks" aria-label="Sidekicks"></div> -->
+          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
+          <a href="#" class="nav-link checked">Administrative</a>
+        </div>
+
+        <div class="checkboxes">
+          <!-- <div class="box-icon henchmen" aria-label="Henchmen"></div> -->
+          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
+          <a href="#" class="nav-link">Design</a>
+        </div>
+
+        <div class="checkboxes">
+          <!-- <div class="box-icon goons" aria-label="Goons"></div> -->
+          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
+          <a href="#" class="nav-link">Human Resources</a>
+        </div>
+
+        <div class="checkboxes">
+          <!-- <div class="box-icon cannon-fodder" aria-label="Cannon fodder"></div> -->
+          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
+          <a href="#" class="nav-link long-link">Executive</a>
+        </div>
+      </section>
     </nav>
   </aside>
 
   <main>
     <header class="nav-search">
+      <nav>
+        <div class="dropdown-menu top-buttons">
+          <i class="fa fa-bars" aria-hidden="true" aria-label="Dropdown menu"></i>
+          <!-- <div class="main-icon hamburger" aria-label="Dropdown menu"></div> -->
+        </div>
 
+        <div class="search-bar">
+          <div class="main-icon search" aria-label="Search"></div>
+          <input type="search" class="search-field" placeholder="Search for a job, skill, or resume" aria-labelledby="search"></input>
+        </div>
 
+        <div class="add-new top-buttons">
+          <div class="main-icon plus" aria-label="Add new"></div>
+        </div>
+
+        <div class="pulse-button top-buttons">
+          <div class="main-icon pulse" aria-label="Pulse"></div>
+        </div>
+
+        <div class="grid-button top-buttons">
+          <div class="main-icon grid" aria-label="Grid"></div>
+        </div>
+      </nav>
     </header>
     <section class="main-content">
+
+
 
     </section>
 
