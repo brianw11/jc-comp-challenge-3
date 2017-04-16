@@ -12,146 +12,142 @@
 </head>
 
 <body>
-  <aside class="nav-aside">
-    <nav>
-      <div class="user-block">
-        <div class="user-image" alt="Avatar image of the currently logged in user"></div>
-        <p class="user-info">
-          <h6 class="user-name">The Dude</h6>
-          <div class="user-dropdown"></div>
-        </p>
+  <aside>
+    <nav class="nav-container">
+
+    </nav>
+
+  </aside>
+  <main class="main-container">
+    <header class="head-container">
+      <i class="fa fa-bars fa-2x" aria-hidden="true" aria-label="Dropdown menu"></i>
+      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      <form class="search" action="#" method="post" class="search-form">
+        <input type="text" name="search" value="" placeholder="Search for a job, resume or task" class="search-input" />
+      </form>
+      <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </header>
+    <section class="job-container">
+      <p class="job-title">Customer Service Representative</p>
+      <p class="job-location"><i class="fa fa-map-marker" aria-hidden="true" aria-label="Dropdown menu"></i> San Francisco, CA - <a href="#">Preview this post</a></p>
+      <div class="job-actions">
+        <i class="fa fa-circle fa-1x job-open-btn" aria-hidden="true">Open</i>
+        <i class="fa fa-search fa-1x job-search-btn" aria-hidden="true"></i>
+        <i class="fa fa-search fa-1x job-search-btn" aria-hidden="true"></i>
+        <i class="fa fa-search fa-1x job-search-btn" aria-hidden="true"></i>
+      </div>
+      <div class="content-tabs-container" role="navigation">
+        <a href="#" class="selected-tab" aria-label="Summary tab">SUMMARY</a>
+        <a href="#" class="tab applicants-tab" aria-label="Applicants tab">APPLICANTS</a>
+        <a href="#" class="tab jobs-tab" aria-label="Job boards tab">JOB BOARDS</a>
+        <a href="#" class="tab interviews-tab" aria-label="Interviews tab">INTERVIEWS</a>
+        <a href="#" class="tab activity-tab" aria-label="Activity tab">ACTIVITY</a>
+        <a href="#" class="tab broadcast-tab" aria-label="Broadcast tab">BROADCAST</a>
+        <a href="#" class="tab notifications-tab" aria-label="Notifications tab">NOTIFICATIONS</a>
+        <a href="#" class="tab more-tab" aria-label="More tab">MORE...</a>
+      </div>
+    </section>
+    <section class="summary-container">
+      <div class="data-container">
+        <div class="circle-data-container">
+          <div class="circle graph-1" aria-label="Number of applicants">
+            <h3>3,154</h3>
+            <p>APPLICANTS</p>
+          </div>
+          <div class="circle graph-2" aria-label="Number of interviews">
+            <h3>1,546</h3>
+            <p>INTERVIEWS</p>
+          </div>
+          <div class="circle graph-3" aria-label="Number of forwards">
+            <h3>912</h3>
+            <p>FORWARDS</p>
+          </div>
+          <div class="page-button">TOTALS - Out of 5,231 views</div>
+        </div>
+
+        <div class="graph-data-container">
+          <div class="graph"></div>
+          <div class="page-button">APPLICANTS/DAY</div>
+        </div>
       </div>
 
-      <section class="nav-main">
-        <h4>Main</h4>
-        <div class="nav-main-content nav-home">
-          <i class="fa fa-home" aria-hidden="true" aria-label="Home"></i>
-          <!-- <div class="nav-icon icon-home" aria-label="Home"></div> -->
-          <a href="#" class="nav-link">Home</a>
-        </div>
-
-        <div class="nav-main-content nav-jobs">
-          <i class="fa fa-briefcase" aria-hidden="true" aria-label="Jobs"></i>
-          <!-- <div class="nav-icon icon-jobs" aria-label="Jobs"></div> -->
-          <a href="#" class="nav-link">Jobs</a>
-        </div>
-
-        <div class="nav-main-content nav-resumes">
-          <i class="fa fa-file-text" aria-hidden="true" aria-label="Resumes"></i>
-          <!-- <div class="nav-icon icon-resumes" aria-label="Resumes"></div> -->
-          <a href="#" class="nav-link">Resumes</a>
-        </div>
-
-        <div class="nav-main-content nav-skills">
-          <i class="fa fa-tasks" aria-hidden="true" aria-label="Skills"></i>
-          <!-- <div class="nav-icon icon-skills" aria-label="Skills"></div> -->
-          <a href="#" class="nav-link">Skills</a>
-        </div>
-
-        <div class="nav-main-content nav-calendar">
-          <i class="fa fa-calendar" aria-hidden="true" aria-label="Calendar"></i>
-          <!-- <div class="nav-icon icon-calendar" aria-label="Calendar"></div> -->
-          <a href="#" class="nav-link">Calendar</a>
-        </div>
-      </section>
-
-      <section class="nav-admin">
-        <h4>Admin</h4>
-        <div class="nav-admin-content nav-users">
-          <i class="fa fa-users" aria-hidden="true" aria-label="Users"></i>
-          <!-- <div class="nav-icon icon-users" aria-label="Users"></div> -->
-          <a href="#" class="nav-link">Users</a>
-        </div>
-
-        <div class="nav-admin-content nav-locations">
-          <i class="fa fa-map-marker" aria-hidden="true" aria-label="Locations"></i>
-          <!-- <div class="nav-icon icon-locations" aria-label="Locations"></div> -->
-          <a href="#" class="nav-link">Locations</a>
-        </div>
-
-        <div class="nav-admin-content nav-archenemies">
-          <i class="fa fa-sitemap" aria-hidden="true" aria-label="Workflows"></i>
-          <!-- <div class="nav-icon icon-archenemies" aria-label="Archenemies"></div> -->
-          <a href="#" class="nav-link">Workflows</a>
-        </div>
-
-        <div class="nav-admin-content nav-listings nav-selected">
-          <i class="fa fa-newspaper-o" aria-hidden="true" aria-label="Listings" aria-selected="true"></i>
-          <!-- <div class="nav-icon icon-listings" aria-label="Listings" aria-selected="true"></div> -->
-          <a href="#" class="nav-link nav-link-listings">Job Listings</a>
-        </div>
-
-        <div class="nav-admin-content nav-social">
-          <i class="fa fa-share-alt" aria-hidden="true" aria-label="Social"></i>
-          <!-- <div class="nav-icon icon-social" aria-label="Social"></div> -->
-          <a href="#" class="nav-link">Social</a>
-        </div>
-      </section>
-
-      <section class="nav-categories">
-        <h4>Categories</h4>
-        <div class="checkboxes" aria-checked="true">
-          <!-- <div class="box-icon sidekicks" aria-label="Sidekicks"></div> -->
-          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
-          <a href="#" class="nav-link checked">Administrative</a>
-        </div>
-
-        <div class="checkboxes">
-          <!-- <div class="box-icon henchmen" aria-label="Henchmen"></div> -->
-          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
-          <a href="#" class="nav-link">Design</a>
-        </div>
-
-        <div class="checkboxes">
-          <!-- <div class="box-icon goons" aria-label="Goons"></div> -->
-          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
-          <a href="#" class="nav-link">Human Resources</a>
-        </div>
-
-        <div class="checkboxes">
-          <!-- <div class="box-icon cannon-fodder" aria-label="Cannon fodder"></div> -->
-          <i class="fa fa-square" aria-hidden="true" aria-label="Sidekicks"></i>
-          <a href="#" class="nav-link long-link">Executive</a>
-        </div>
-      </section>
-    </nav>
-  </aside>
-
-  <main>
-    <header class="nav-search">
-      <nav>
-        <div class="dropdown-menu top-buttons">
-          <i class="fa fa-bars" aria-hidden="true" aria-label="Dropdown menu"></i>
-          <!-- <div class="main-icon hamburger" aria-label="Dropdown menu"></div> -->
-        </div>
-
-        <div class="search-bar">
-          <div class="main-icon search" aria-label="Search"></div>
-          <input type="search" class="search-field" placeholder="Search for a job, skill, or resume" aria-labelledby="search"></input>
-        </div>
-
-        <div class="add-new top-buttons">
-          <div class="main-icon plus" aria-label="Add new"></div>
-        </div>
-
-        <div class="pulse-button top-buttons">
-          <div class="main-icon pulse" aria-label="Pulse"></div>
-        </div>
-
-        <div class="grid-button top-buttons">
-          <div class="main-icon grid" aria-label="Grid"></div>
-        </div>
-      </nav>
-    </header>
-    <section class="main-content">
-
-
+      <div class="divider">
+        <div class="horizontal-rule"></div>
+        <i class="fa fa-chevron-up fa-1x divider-arrow" aria-hidden="true"></i>
+        <div class="horizontal-rule"></div>
+      </div>
 
     </section>
+    <section class="details-container">
 
+      <table aria-label="Edit job listing">
+        <thead>
+          <th colspan="4" aria-label="Job description">
+            <h5>Job Description</h5>
+            <button class="table-edit">
+              <i class="fa fa-pencil fa-1x" aria-hidden="true"></i>
+              EDIT
+            </button>
+          </th>
+        </thead>
+        <tbody>
+          <tr aria-label="Position title">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Position Title</td>
+            <td class="table-info">Comet Kid (sidekick of GalaxyGal)</td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Position location">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Location</td>
+            <td class="table-info">Swiftopolis, CA</td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Position employment type">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Employment Type</td>
+            <td class="table-info">Full-time</td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Position experience level">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Experience</td>
+            <td class="table-info">Entry-level</td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Position status">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Status</td>
+            <td class="table-info">Open</td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Position description">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Description</td>
+            <td class="table-info">Have you been waiting for your big break? Are you ready for your own archenemy, fame, and the chance to defend humanity on a global scale? This is an exciting opportunity with high-profile exposure. GalaxyGal is a world-class hero with a stellar
+              apprenticeship program, and her sidekicks have a great survival rate - 18% higher than industry standards!</td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Hiring lead info">
+            <td class="table-hacky"></td>
+            <td class="table-lead">Hiring Lead</td>
+            <td class="table-info">
+              <div class="hiring-lead" alt="Image of Nebularis, the hiring lead"></div>
+              Nebularis
+            </td>
+            <td class="table-hacky"></td>
+          </tr>
+          <tr aria-label="Position salary">
+            <td class="table-hacky"></td>
+            <td class="table-lead">APPROVED SALARY</td>
+            <td class="table-info">$80,000 - $150,000 <span class="salary-comment">depending on experience</span></td>
+            <td class="table-hacky"></td>
+          </tr>
+        </tbody>
+      </table>
 
+    </section>
   </main>
-
 </body>
 
 </html>

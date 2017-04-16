@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: row;
   margin: 0;
   height: 100%;
 }
@@ -27,15 +28,402 @@ table {
   font-family: 'Roboto', sans-serif;
 }
 
-.nav-aside {
+
+/*.nav-aside {
   background-color: yellow;
   min-width: 200px;
 }
 
 .nav-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
   background-color: teal;
 }
 
+.nav-search i {}
+
 .main-content {
   background-color: red;
+}*/
+
+.main-container {
+  width: 100%;
+}
+
+.head-container {
+  background-color: yellow;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  /*width: 100%;*/
+}
+
+.head-container i {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+}
+
+.search-input {
+  flex-grow: 1;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*.job-open-btn {
+  padding-left: 32px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
+  margin: auto;
+  position: relative;
+}
+
+button.job-open-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.job-open-btn::before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+  left: 0;
+  content: "\f005";
+}*/
+
+.job-open-btn {
+  color: green;
+  padding: 4px;
+  width: 60px;
+  height: 15px;
+  border-radius: 50px;
+  border: 1px solid black;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.job-search-btn {
+  padding: 4px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.job-search-btn:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: #FFF;
+}
+
+
+/*PAGE TABS CONTENT*/
+
+.content-tabs-container {
+  border-bottom: 3px solid #e6e9ef;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.tab {
+  display: inline-block;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+
+.selected-tab {
+  display: inline-block;
+  color: #354052;
+  border-bottom: 4px solid #00C5ED;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+
+.page-content {
+  background-color: #EDF2F6;
+}
+
+.applicants-tab,
+.jobs-tab,
+.interviews-tab,
+.activity-tab,
+.broadcast-tab,
+.notifications-tab {
+  display: none;
+}
+
+
+/* SUMMARY CONTAINER */
+
+.summary-container {
+  background-color: #EDF2F6;
+}
+
+
+/*DATA VISUALIZATION*/
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* CIRCLE GRAPHS */
+
+.circle-data-container,
+.graph-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 600px;*/
+  margin-bottom: 25px;
+}
+
+.data-visualization {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 300px;
+  padding: 30px 0 30px 0;
+}
+
+.data-and-button {
+  text-align: center;
+}
+
+
+/*.data-circles {
+  display: flex;
+  height: 200px;
+  margin-bottom: 40px;
+}*/
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+/*.graph-1 {
+  border-color: #4EB8BF #4EB8BF #4EB8BF #fff;
+  border-width: 10px;
+}*/
+
+.graph-1 {
+  border: 10px solid #F7C350;
+  border-bottom: 10px solid #C8CBD1;
+}
+
+.graph-2 {
+  border: 10px solid #68D152;
+  border-bottom: 10px solid #C8CBD1;
+  border-right: 10px solid #C8CBD1;
+}
+
+.graph-3 {
+  border: 10px solid #C8CBD1;
+  border-left: 10px solid #00C5ED;
+}
+
+
+/*.first {
+  border: 10px solid #F7C350;
+  border-right: 10px solid #C8CBD1
+}
+
+.second {
+  border: 10px solid #68D152;
+  border-bottom: 10px solid #C8CBD1
+}
+
+.third {
+  border: 10px solid #00C5ED;
+  border-bottom: 10px solid #C8CBD1;
+}*/
+
+.data-graph {
+  text-align: center;
+}
+
+.graph {
+  height: 120px;
+  width: 300px;
+  background: url(../img/bar-chart.png) no-repeat;
+  background-size: contain;
+  margin: 20px;
+}
+
+.page-button {
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #354052;
+  border: 2px solid #c8cbd1;
+  border-radius: 25px;
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+}
+
+
+/* BAR CHART GRAPH */
+
+
+/* CONTENT DIVIDER */
+
+
+/*DIVIDER*/
+
+.divider {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-rule {
+  display: block;
+  height: 2px;
+  width: 45%;
+  background-color: #E6E9EF;
+  border: none;
+}
+
+.divider-arrow {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border: 1px solid #E6E9EF;
+  color: #E6E9EF;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.divider-arrow:hover {
+  border-radius: 100%;
+  box-shadow: 0 0 5px #F7C350;
+  color: black;
+  cursor: pointer;
+}
+
+
+/* DETAILS CONTAINER */
+
+.details-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #EDF2F6;
+  padding-bottom: 30px;
+}
+
+
+/* JOB TABLE CONTENTS */
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px #E6E9EF;
+  padding: 0 20px;
+}
+
+th {
+  background-color: #6F7E95;
+  border-radius: 2px 2px 0 0;
+  text-align: left;
+  padding: 15px 0 15px 30px;
+}
+
+.table-edit {
+  background-color: #7D8BA6;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+.table-edit:hover {
+  background-color: #00C5ED;
+}
+
+.table-edit-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(images/edit-light.svg) no-repeat;
+  background-size: cover;
+  vertical-align: -5px;
+}
+
+tbody {
+  padding: 0 20px;
+}
+
+tr {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+td {
+  padding: 30px 20px;
+  border-bottom: 1px solid #E6E9EF;
+}
+
+.table-hacky {
+  display: none;
+}
+
+.table-lead {
+  width: 90%;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: text-top;
+  color: #6F7E95;
+  padding: 20px;
+  border-bottom: none;
+}
+
+.table-info {
+  width: 90%;
+  margin: auto;
+  line-height: 145%;
+  font-weight: 300;
+  color: #354052;
+  padding: 0 10px 20px 20px;
+}
+
+.hiring-lead {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: url(images/hiring-lead.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: 15px;
 }
