@@ -221,6 +221,8 @@ p.tab:hover {
 .data-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -578,4 +580,25 @@ th h5 {
 
 .sidebar-text {
   font-size: 14px;
+}
+
+@media screen and (min-width: 550px) {
+  .interviews-tab {
+    display: inline;
+  }
+  .data-container {}
+  .circle-data-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px;
+  }
+  .page-button {
+    flex: 0 1 50%;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .jobs-tab {
+    display: inline;
+  }
 }
