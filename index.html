@@ -20,33 +20,41 @@
   </aside>
   <main class="main-container">
     <header class="head-container">
-      <i class="fa fa-bars fa-2x" aria-hidden="true" aria-label="Dropdown menu"></i>
-      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-      <form class="search" action="#" method="post" class="search-form">
-        <input type="text" name="search" value="" placeholder="Search for a job, resume or task" class="search-input" />
-      </form>
-      <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+      <div class="header-icon menu-btn">
+        <i class="fa fa-bars fa-1x" aria-hidden="true" aria-label="Dropdown menu"></i>
+      </div>
+      <div class="header-icon search-btn">
+        <i class="fa fa-search fa-1x" aria-hidden="true"></i>
+      </div>
+      <input type="text" name="search" value="" placeholder="Search for a job, resume or task" class="search-input" />
+      <div class="header-icon expand-btn">
+        <i class="fa fa-chevron-left fa-1x" aria-hidden="true"></i>
+      </div>
     </header>
     <section class="job-container">
-      <p class="job-title">Customer Service Representative</p>
-      <p class="job-location"><i class="fa fa-map-marker" aria-hidden="true" aria-label="Dropdown menu"></i> San Francisco, CA - <a href="#">Preview this post</a></p>
-      <div class="job-actions">
-        <i class="fa fa-circle fa-1x job-open-btn" aria-hidden="true">Open</i>
-        <i class="fa fa-search fa-1x job-search-btn" aria-hidden="true"></i>
-        <i class="fa fa-search fa-1x job-search-btn" aria-hidden="true"></i>
-        <i class="fa fa-search fa-1x job-search-btn" aria-hidden="true"></i>
+      <div class="title-container">
+        <p class="job-title">Customer Service Representative</p>
+        <p class="job-location"><i class="fa fa-map-marker" aria-hidden="true" aria-label="Dropdown menu"></i> San Francisco, CA - <a href="#">Preview this post</a></p>
       </div>
+      <div class="job-actions-container">
+        <button type="button" name="open-btn" class="action-btn job-open-btn"><i class="fa fa-circle fa-1x job-open-btn-icon" aria-hidden="true"></i> OPEN</button>
+        <button type="button" name="bookmark-btn" class="action-btn job-bookmark-btn"><i class="fa fa-bookmark fa-1x" aria-hidden="true"></i></button>
+        <button type="button" name="edit-btn" class="action-btn job-edit-btn"><i class="fa fa-pencil fa-1x" aria-hidden="true"></i></button>
+        <button type="button" name="delete-btn" class="action-btn job-delete-btn"><i class="fa fa-trash fa-1x" aria-hidden="true"></i></button>
+      </div>
+
       <div class="content-tabs-container" role="navigation">
-        <a href="#" class="selected-tab" aria-label="Summary tab">SUMMARY</a>
-        <a href="#" class="tab applicants-tab" aria-label="Applicants tab">APPLICANTS</a>
-        <a href="#" class="tab jobs-tab" aria-label="Job boards tab">JOB BOARDS</a>
-        <a href="#" class="tab interviews-tab" aria-label="Interviews tab">INTERVIEWS</a>
-        <a href="#" class="tab activity-tab" aria-label="Activity tab">ACTIVITY</a>
-        <a href="#" class="tab broadcast-tab" aria-label="Broadcast tab">BROADCAST</a>
-        <a href="#" class="tab notifications-tab" aria-label="Notifications tab">NOTIFICATIONS</a>
-        <a href="#" class="tab more-tab" aria-label="More tab">MORE...</a>
+        <p class="tab selected-tab" aria-label="Summary tab">SUMMARY</p>
+        <p class="tab applicants-tab" aria-label="Applicants tab">APPLICANTS</p>
+        <p class="tab jobs-tab" aria-label="Job boards tab">JOB BOARDS</p>
+        <p class="tab interviews-tab" aria-label="Interviews tab">INTERVIEWS</p>
+        <p class="tab activity-tab" aria-label="Activity tab">ACTIVITY</p>
+        <p class="tab broadcast-tab" aria-label="Broadcast tab">BROADCAST</p>
+        <p class="tab notifications-tab" aria-label="Notifications tab">NOTIFICATIONS</p>
+        <p class="tab more-tab" aria-label="More tab">MORE...</p>
       </div>
     </section>
+
     <section class="summary-container">
       <div class="data-container">
         <div class="circle-data-container">
@@ -83,7 +91,7 @@
       <table aria-label="Edit job listing">
         <thead>
           <th colspan="4" aria-label="Job description">
-            <h5>Job Description</h5>
+            <h5>JOB DESCRIPTION</h5>
             <button class="table-edit">
               <i class="fa fa-pencil fa-1x" aria-hidden="true"></i>
               EDIT
@@ -92,56 +100,56 @@
         </thead>
         <tbody>
           <tr aria-label="Position title">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Position Title</td>
             <td class="table-info">Comet Kid (sidekick of GalaxyGal)</td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Position location">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Location</td>
             <td class="table-info">Swiftopolis, CA</td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Position employment type">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Employment Type</td>
             <td class="table-info">Full-time</td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Position experience level">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Experience</td>
             <td class="table-info">Entry-level</td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Position status">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Status</td>
             <td class="table-info">Open</td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Position description">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Description</td>
             <td class="table-info">Have you been waiting for your big break? Are you ready for your own archenemy, fame, and the chance to defend humanity on a global scale? This is an exciting opportunity with high-profile exposure. GalaxyGal is a world-class hero with a stellar
               apprenticeship program, and her sidekicks have a great survival rate - 18% higher than industry standards!</td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Hiring lead info">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">Hiring Lead</td>
             <td class="table-info">
               <div class="hiring-lead" alt="Image of Nebularis, the hiring lead"></div>
               Nebularis
             </td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
           <tr aria-label="Position salary">
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
             <td class="table-lead">APPROVED SALARY</td>
             <td class="table-info">$80,000 - $150,000 <span class="salary-comment">depending on experience</span></td>
-            <td class="table-hacky"></td>
+            <td class="table-spacing"></td>
           </tr>
         </tbody>
       </table>
@@ -153,7 +161,34 @@
           <button type="button" name="linkedin-btn" class="social-btn linkedin-btn"><i class="fa fa-linkedin fa-1x social-icon" aria-hidden="true" aria-label="LinkedIn link"></i> Post to LinkedIn</button>
         </div>
 
+        <div class="sidebar-container">
+          <div class="sidebar" aria-label="Permalink to job listing">
+            <p class="sidebar-title"><i class="fa fa-globe fa-1x sidebar-icon" aria-hidden="true" aria-label="Link to this job"></i> Link to this Job</p>
+            <p class="sidebar-text">Use the permalink below to share this job listing.</p>
+            <div class="field-button">
+              <input type="text" name="" value="http://superhumanresources.com/sidekicks/cometkid/8409736923834/" class="sidebar-input">
+              <button class="copy">Copy</button>
+            </div>
+          </div>
 
+          <div class="sidebar" aria-label="Widget for job listing">
+            <p class="sidebar-title"><i class="fa fa-puzzle-piece fa-1x sidebar-icon" aria-hidden="true" aria-label="Link to this job"></i> Use the Button Widget</p>
+            <p class="sidebar-text">This widget embeds the buttons for sharing the job posting for submitting a resume on your website.</p>
+            <div class="field-button">
+              <input type="text" name="" value="<script type='text/javascript' src='http://somewebsite.com/widgets'></script>" class="sidebar-input">
+              <button class="copy">Copy</button>
+            </div>
+          </div>
+
+          <div class="sidebar" aria-label="Send resumes for job listing">
+            <p class="sidebar-title"><i class="fa fa-paper-plane fa-1x sidebar-icon" aria-hidden="true" aria-label="Link to this job"></i> Upload Resumes by Email</p>
+            <p class="sidebar-text">You may send multiple resumes for this job to the email address below.</p>
+            <div class="field-button">
+              <input type="text" name="" value="ron@parksandrec.com" class="sidebar-input">
+              <button class="copy">Email</button>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
   </main>
