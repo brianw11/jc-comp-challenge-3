@@ -1,8 +1,8 @@
 body {
   display: flex;
   flex-direction: row;
-  margin: 0;
   height: 100%;
+  margin: 0;
 }
 
 *,
@@ -53,8 +53,8 @@ table {
 }
 
 .head-container {
-  background-color: yellow;
   display: flex;
+  background-color: yellow;
   /*justify-content: center;*/
   align-items: center;
   /*width: 100%;*/
@@ -103,38 +103,38 @@ button.job-open-btn {
 }*/
 
 .job-open-btn {
-  color: green;
-  padding: 4px;
   width: 60px;
   height: 15px;
-  border-radius: 50px;
-  border: 1px solid black;
-  vertical-align: middle;
+  padding: 4px;
   text-align: center;
+  vertical-align: middle;
+  color: green;
+  border: 1px solid black;
+  border-radius: 50px;
 }
 
 .job-search-btn {
-  padding: 4px;
   height: 15px;
-  border-radius: 50%;
-  border: 1px solid black;
-  vertical-align: middle;
+  padding: 4px;
   text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .job-search-btn:hover {
-  background-color: blue;
   cursor: pointer;
   color: #FFF;
+  background-color: blue;
 }
 
 
 /*PAGE TABS CONTENT*/
 
 .content-tabs-container {
-  border-bottom: 3px solid #e6e9ef;
   width: 100%;
   padding-left: 50px;
+  border-bottom: 3px solid #e6e9ef;
 }
 
 .tab {
@@ -145,10 +145,10 @@ button.job-open-btn {
 
 .selected-tab {
   display: inline-block;
-  color: #354052;
-  border-bottom: 4px solid #00C5ED;
   margin-right: 50px;
   padding-bottom: 20px;
+  color: #354052;
+  border-bottom: 4px solid #00C5ED;
 }
 
 .page-content {
@@ -186,18 +186,18 @@ button.job-open-btn {
 .graph-data-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   /*height: 600px;*/
   margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .data-visualization {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   min-height: 300px;
   padding: 30px 0 30px 0;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .data-and-button {
@@ -214,12 +214,12 @@ button.job-open-btn {
 .circle {
   display: flex;
   flex-direction: column;
-  height: 150px;
   width: 150px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 100%;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
-  margin: 20px;
 }
 
 
@@ -235,8 +235,8 @@ button.job-open-btn {
 
 .graph-2 {
   border: 10px solid #68D152;
-  border-bottom: 10px solid #C8CBD1;
   border-right: 10px solid #C8CBD1;
+  border-bottom: 10px solid #C8CBD1;
 }
 
 .graph-3 {
@@ -265,22 +265,22 @@ button.job-open-btn {
 }
 
 .graph {
-  height: 120px;
   width: 300px;
+  height: 120px;
+  margin: 20px;
   background: url(../img/bar-chart.png) no-repeat;
   background-size: contain;
-  margin: 20px;
 }
 
 .page-button {
-  background-color: #ffffff;
-  font-weight: 700;
+  width: 220px;
+  padding: 10px;
+  text-align: center;
   color: #354052;
   border: 2px solid #c8cbd1;
   border-radius: 25px;
-  padding: 10px;
-  width: 220px;
-  text-align: center;
+  background-color: #ffffff;
+  font-weight: 700;
 }
 
 
@@ -302,29 +302,29 @@ button.job-open-btn {
 
 .horizontal-rule {
   display: block;
-  height: 2px;
   width: 45%;
-  background-color: #E6E9EF;
+  height: 2px;
   border: none;
+  background-color: #E6E9EF;
 }
 
 .divider-arrow {
   display: block;
-  height: 20px;
   width: 20px;
+  height: 20px;
   margin: 5px;
-  border: 1px solid #E6E9EF;
-  color: #E6E9EF;
-  border-radius: 50%;
   text-align: center;
   vertical-align: middle;
+  color: #E6E9EF;
+  border: 1px solid #E6E9EF;
+  border-radius: 50%;
 }
 
 .divider-arrow:hover {
+  cursor: pointer;
+  color: black;
   border-radius: 100%;
   box-shadow: 0 0 5px #F7C350;
-  color: black;
-  cursor: pointer;
 }
 
 
@@ -332,10 +332,12 @@ button.job-open-btn {
 
 .details-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
-  background-color: #EDF2F6;
   padding-bottom: 30px;
+  background-color: #EDF2F6;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -343,26 +345,26 @@ button.job-open-btn {
 
 table {
   width: 90%;
+  padding: 0 20px;
   border-collapse: collapse;
   box-shadow: 0 0 10px #E6E9EF;
-  padding: 0 20px;
 }
 
 th {
-  background-color: #6F7E95;
-  border-radius: 2px 2px 0 0;
-  text-align: left;
   padding: 15px 0 15px 30px;
+  text-align: left;
+  border-radius: 2px 2px 0 0;
+  background-color: #6F7E95;
 }
 
 .table-edit {
-  background-color: #7D8BA6;
+  margin: 10px;
+  padding: 10px 15px;
   color: #ffffff;
+  border: none;
+  background-color: #7D8BA6;
   font-size: 14px;
   font-weight: 700;
-  border: none;
-  padding: 10px 15px;
-  margin: 10px;
 }
 
 .table-edit:hover {
@@ -371,11 +373,11 @@ th {
 
 .table-edit-icon {
   display: inline-block;
-  height: 20px;
   width: 20px;
+  height: 20px;
+  vertical-align: -5px;
   background: url(images/edit-light.svg) no-repeat;
   background-size: cover;
-  vertical-align: -5px;
 }
 
 tbody {
@@ -383,9 +385,9 @@ tbody {
 }
 
 tr {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 td {
@@ -399,31 +401,96 @@ td {
 
 .table-lead {
   width: 90%;
+  padding: 20px;
+  vertical-align: text-top;
+  text-transform: uppercase;
+  color: #6F7E95;
+  border-bottom: none;
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
-  vertical-align: text-top;
-  color: #6F7E95;
-  padding: 20px;
-  border-bottom: none;
 }
 
 .table-info {
   width: 90%;
   margin: auto;
-  line-height: 145%;
-  font-weight: 300;
-  color: #354052;
   padding: 0 10px 20px 20px;
+  color: #354052;
+  font-weight: 300;
+  line-height: 145%;
 }
 
 .hiring-lead {
   display: inline-block;
-  height: 50px;
   width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  vertical-align: middle;
+  border-radius: 100%;
   background: url(images/hiring-lead.jpg) no-repeat;
   background-size: cover;
-  border-radius: 100%;
-  vertical-align: middle;
-  margin-right: 15px;
+}
+
+
+/* INTERIOR ASIDE */
+
+.interior-aside-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook {
+  color: #FFF;
+  background-color: #3C5A99;
+}
+
+.social-text {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.social-btn {
+  width: 90%;
+  height: 50px;
+  margin: 7px 0;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.facebook-btn {
+  background-color: #3C5A99;
+}
+
+.twitter-btn {
+  background-color: #1DA1F2;
+}
+
+.linkedin-btn {
+  background-color: #0077B5;
+}
+
+.facebook-btn:hover,
+.twitter-btn:hover,
+.linkedin-btn:hover {
+  cursor: pointer;
+}
+
+.social-icon {
+  position: absolute;
+  left: 60px;
 }
