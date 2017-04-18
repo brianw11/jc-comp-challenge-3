@@ -28,34 +28,45 @@ table {
   font-family: 'Roboto', sans-serif;
 }
 
-
-/*.nav-aside {
-  background-color: yellow;
-  min-width: 200px;
-}
-
-.nav-search {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  background-color: teal;
-}
-
-.nav-search i {}
-
-.main-content {
-  background-color: red;
-}*/
-
 .nav-aside {
-  background-color: #354052;
-  min-width: 150px;
   display: none;
+  min-width: 150px;
+  background-color: #354052;
+}
+
+.user-block {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid #2d3849;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 100%;
+  background: url('../img/pratt.jpg') no-repeat;
+  background-size: cover;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-name,
+.user-dropdown {
+  color: #a9b4c6;
 }
 
 .nav-icon {
   width: 15px;
+}
+
+section h4 {
+  margin-left: 15px;
+  color: #5e6778;
+  font-size: 12px;
 }
 
 
@@ -65,28 +76,28 @@ table {
 .nav-admin,
 .nav-categories {
   max-width: 100%;
-  border-bottom: 2px solid #2d3849;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-bottom: 2px solid #2d3849;
 }
 
 .nav-link {
+  margin: 0 0 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #a9b4c6;
   font-size: 12px;
   font-weight: 700;
   line-height: 300%;
-  text-transform: uppercase;
-  margin: 0 0 0 15px;
-  text-decoration: none;
 }
 
 .nav-main-content,
 .nav-admin-content {
-  color: #a9b4c6;
   display: flex;
-  align-items: center;
   padding-left: 15px;
   cursor: pointer;
+  color: #a9b4c6;
+  align-items: center;
 }
 
 .nav-main-content:hover .nav-link {
@@ -99,23 +110,6 @@ table {
 
 
 /*NAV ADMIN CONTENT*/
-
-
-/*.nav-admin {
-  max-width: 100%;
-  border-bottom: 2px solid #2d3849;
-  margin-top: 30px;
-  padding: 0 20px 20px 15px;
-  padding-bottom: 20px;
-}*/
-
-
-/*.nav-admin-content {
-  color: #a9b4c6;
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 30px;
-}*/
 
 .nav-admin-content:hover .nav-link {
   color: #ffffff;
@@ -154,8 +148,19 @@ table {
   border-left: 1px solid #e6e9ef;
 }
 
+.add-user-btn,
+.calendar-add-btn,
+.grid-btn {
+  display: none;
+  cursor: pointer;
+  border-left: 1px solid #e6e9ef;
+}
+
 .menu-btn:hover,
-.expand-btn:hover {
+.expand-btn:hover,
+.add-user-btn:hover,
+.calendar-add-btn:hover,
+.grid-btn:hover {
   color: #FFF;
   background-color: #68D152;
 }
@@ -164,6 +169,7 @@ table {
   height: 44px;
   padding: 3px;
   text-overflow: ellipsis;
+  color: #5e6778;
   border: none;
   border-bottom: 1px solid #e6e9ef;
   outline: none;
@@ -173,7 +179,7 @@ table {
 
 .search-input::placeholder,
 .header-icon {
-  color: #959595;
+  color: #5e6778;
 }
 
 .job-container {
@@ -216,7 +222,7 @@ table {
 .action-btn {
   width: 20px;
   height: 25px;
-  color: #959595;
+  color: #5e6778;
   border: 1px solid #C8CBD1;
   border-radius: 50%;
   outline: none;
@@ -246,17 +252,24 @@ table {
 
 .content-tabs-container {
   display: flex;
+  margin-top: 10px;
   width: 100%;
   border-bottom: 3px solid #e6e9ef;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 p.tab {
-  margin: 0 10px;
+  margin: 0 20px;
   padding-bottom: 15px;
-  color: #959595;
+  color: #5e6778;
   font-size: 13px;
   font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  color: #354052;
+  font-size: 36px;
 }
 
 p.selected-tab {
@@ -325,8 +338,8 @@ p.tab:hover {
 .circle {
   display: flex;
   flex-direction: column;
-  width: 150px;
-  height: 150px;
+  width: 155px;
+  height: 155px;
   margin: 20px;
   border-radius: 100%;
   align-items: center;
@@ -371,12 +384,6 @@ p.tab:hover {
   background-color: #ffffff;
   font-weight: 700;
 }
-
-
-/* BAR CHART GRAPH */
-
-
-/* CONTENT DIVIDER */
 
 
 /*DIVIDER*/
@@ -515,7 +522,7 @@ th h5 {
   margin-right: 15px;
   vertical-align: middle;
   border-radius: 100%;
-  background: url(images/hiring-lead.jpg) no-repeat;
+  background: url(../img/hiring-lead.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -655,21 +662,12 @@ th h5 {
   font-size: 14px;
 }
 
-@media screen and (min-width: 700px) {
-  .job-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .title-container {
-    width: 50%;
+@media screen and (min-width: 430px) {
+  .jobs-tab {
+    display: inline;
   }
   .content-tabs-container {
-    padding-top: 20px;
-    flex: 0 1 100%;
-  }
-  .nav-aside {
-    display: block;
+    justify-content: flex-start;
   }
 }
 
@@ -680,16 +678,126 @@ th h5 {
   .data-container {}
   .circle-data-container {
     flex-direction: row;
-    flex-wrap: wrap;
     width: 450px;
+    flex-wrap: wrap;
   }
   .page-button {
     flex: 0 1 50%;
   }
+  .graph {
+    width: 450px;
+    height: 180px;
+  }
+  .add-user-btn,
+  .calendar-add-btn,
+  .grid-btn {
+    display: block;
+  }
+  .expand-btn {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 430px) {
-  .jobs-tab {
-    display: inline;
+@media screen and (min-width: 650px) {
+  .activity-tab {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .job-container {
+    flex-direction: row;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .title-container {
+    width: 50%;
+  }
+  .content-tabs-container {
+    margin-top: 30px;
+    flex: 0 1 100%;
+  }
+  .nav-aside {
+    display: block;
+  }
+  tr {
+    flex-direction: row;
+  }
+  .title-container {
+    margin-left: 25px;
+    align-items: flex-start;
+  }
+  .job-actions-container {
+    margin: 0 25px;
+  }
+  .activity-tab {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .activity-tab {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .broadcast-tab {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .data-container {}
+  .circle-data-container {
+    width: 650px;
+  }
+  .social-btn-container {
+    flex-direction: row;
+  }
+  .social-btn {
+    width: 220px;
+    margin: 0 5px;
+  }
+  .notifications-tab {
+    display: block;
+  }
+  .more-tab {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .social-btn-container {
+    flex-direction: column;
+  }
+  .social-btn {
+    width: 280px;
+    margin: 5px 0;
+  }
+  .details-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .job-listing-table {
+    width: 60%;
+  }
+  .interior-aside-container {
+    width: 40%;
+    max-width: 310px;
+    padding-top: 0;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .facebook-btn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .data-container {
+    flex-direction: row;
   }
 }
