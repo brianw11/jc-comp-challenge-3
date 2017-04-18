@@ -48,6 +48,79 @@ table {
   background-color: red;
 }*/
 
+.nav-aside {
+  background-color: #354052;
+  min-width: 150px;
+  display: none;
+}
+
+.nav-icon {
+  width: 15px;
+}
+
+
+/*NAV MAIN CONTENT*/
+
+.nav-main,
+.nav-admin,
+.nav-categories {
+  max-width: 100%;
+  border-bottom: 2px solid #2d3849;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #a9b4c6;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 300%;
+  text-transform: uppercase;
+  margin: 0 0 0 15px;
+  text-decoration: none;
+}
+
+.nav-main-content,
+.nav-admin-content {
+  color: #a9b4c6;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.nav-main-content:hover .nav-link {
+  color: #ffffff;
+}
+
+.nav-main-content:hover {
+  background-color: #30394A;
+}
+
+
+/*NAV ADMIN CONTENT*/
+
+
+/*.nav-admin {
+  max-width: 100%;
+  border-bottom: 2px solid #2d3849;
+  margin-top: 30px;
+  padding: 0 20px 20px 15px;
+  padding-bottom: 20px;
+}*/
+
+
+/*.nav-admin-content {
+  color: #a9b4c6;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 30px;
+}*/
+
+.nav-admin-content:hover .nav-link {
+  color: #ffffff;
+}
+
 .main-container {
   width: 100%;
 }
@@ -580,6 +653,24 @@ th h5 {
 
 .sidebar-text {
   font-size: 14px;
+}
+
+@media screen and (min-width: 700px) {
+  .job-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .title-container {
+    width: 50%;
+  }
+  .content-tabs-container {
+    padding-top: 20px;
+    flex: 0 1 100%;
+  }
+  .nav-aside {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 550px) {
