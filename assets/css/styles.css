@@ -28,6 +28,13 @@ table {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #6D6F70;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .nav-aside {
   display: none;
   min-width: 150px;
@@ -37,7 +44,7 @@ table {
 .user-block {
   width: 100%;
   margin: 20px 0 0 0;
-  padding: 0 0 20px 0;
+  /*padding: 0 0 20px 0;*/
   border-bottom: 2px solid #2d3849;
 }
 
@@ -50,17 +57,36 @@ table {
   background-size: cover;
 }
 
-.user-info {
-  text-align: center;
-}
-
 .user-name,
 .user-dropdown {
   color: #a9b4c6;
+  font-size: 14px;
+  text-align: center;
+}
+
+.user-name {
+  margin: 10px 0 0;
+}
+
+.user-dropdown {
+  font-size: 8px;
+  /*border: 1px solid red;*/
+  border-radius: 100%;
+  margin: 0 5px;
+}
+
+.user-dropdown:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #F7C350;
 }
 
 .nav-icon {
   width: 15px;
+}
+
+.nav-selected {
+  background-color: #30394A;
+  border-left: 2px solid #00C5ED;
 }
 
 section h4 {
@@ -76,8 +102,7 @@ section h4 {
 .nav-admin,
 .nav-categories {
   max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   border-bottom: 2px solid #2d3849;
 }
 
@@ -104,8 +129,10 @@ section h4 {
   color: #ffffff;
 }
 
-.nav-main-content:hover {
+.nav-main-content:hover,
+.nav-admin-content:hover {
   background-color: #30394A;
+  border-left: 2px solid #00C5ED;
 }
 
 
@@ -201,13 +228,16 @@ section h4 {
 .job-title {
   margin: 10px 0 5px;
   color: #354052;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .job-location {
   margin: 5px 0 10px;
-  color: #354052;
+  color: #5e6778;
   font-size: 14px;
   font-weight: 400;
 }
@@ -448,10 +478,10 @@ table {
 }
 
 th {
-  padding: 15px 0 15px 30px;
-  text-align: left;
-  border-radius: 2px 2px 0 0;
   background-color: #6F7E95;
+  border-radius: 2px 2px 0 0;
+  text-align: left;
+  padding: 15px 0 15px 30px;
 }
 
 .table-edit {
@@ -482,7 +512,7 @@ tr {
 }
 
 td {
-  padding: 30px 20px;
+  padding: 20px 20px;
   border-bottom: 1px solid #E6E9EF;
 }
 
@@ -696,6 +726,24 @@ th h5 {
   .expand-btn {
     display: none;
   }
+  .job-container {
+    flex-direction: row;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .title-container {
+    width: 50%;
+    margin-left: 25px;
+    align-items: flex-start;
+  }
+  .content-tabs-container {
+    margin-top: 30px;
+    flex: 0 1 100%;
+  }
+  .job-actions-container {
+    margin: 0 25px;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -705,34 +753,52 @@ th h5 {
 }
 
 @media screen and (min-width: 700px) {
-  .job-container {
-    flex-direction: row;
-    padding-top: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .title-container {
-    width: 50%;
-  }
-  .content-tabs-container {
-    margin-top: 30px;
-    flex: 0 1 100%;
-  }
   .nav-aside {
     display: block;
   }
-  tr {
-    flex-direction: row;
-  }
-  .title-container {
-    margin-left: 25px;
-    align-items: flex-start;
-  }
-  .job-actions-container {
-    margin: 0 25px;
-  }
   .activity-tab {
     display: none;
+  }
+  table {
+    width: 90%;
+  }
+  /*tbody {
+    padding: 0 20px;
+  }*/
+  tr {
+    display: table-row;
+    /*flex-direction: row;*/
+  }
+  td {
+    /*border-bottom: 1px solid #E6E9EF;*/
+  }
+  .table-spacing {
+    width: 2%;
+    display: table-cell;
+    border: none;
+  }
+  .table-lead {
+    width: 36%;
+    padding-left: 20px;
+    border-bottom: 1px solid #E6E9EF;
+  }
+  .table-info {
+    width: 60%;
+    line-height: 145%;
+    font-weight: 300;
+    color: #354052;
+    /*padding-right: 30px;*/
+    padding: 10px 20px;
+  }
+  .hiring-lead {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url(../img/hiring-lead.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 15px;
   }
 }
 
@@ -755,6 +821,7 @@ th h5 {
   }
   .social-btn-container {
     flex-direction: row;
+    margin: 10px 0;
   }
   .social-btn {
     width: 220px;
@@ -771,6 +838,7 @@ th h5 {
 @media screen and (min-width: 1050px) {
   .social-btn-container {
     flex-direction: column;
+    margin: 0;
   }
   .social-btn {
     width: 280px;
