@@ -24,7 +24,8 @@ p,
 a,
 button,
 input,
-table {
+table,
+div {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -35,6 +36,9 @@ a {
   font-weight: 700;
 }
 
+
+/*USER BLOCK*/
+
 .nav-aside {
   display: none;
   min-width: 150px;
@@ -44,7 +48,6 @@ a {
 .user-block {
   width: 100%;
   margin: 20px 0 0 0;
-  /*padding: 0 0 20px 0;*/
   border-bottom: 2px solid #2d3849;
 }
 
@@ -70,7 +73,6 @@ a {
 
 .user-dropdown {
   margin: 0 5px;
-  /*border: 1px solid red;*/
   border-radius: 100%;
   font-size: 8px;
 }
@@ -79,6 +81,9 @@ a {
   cursor: pointer;
   box-shadow: 0 0 5px #F7C350;
 }
+
+
+/*NAV ELEMENTS*/
 
 .nav-icon {
   width: 15px;
@@ -129,7 +134,8 @@ section h4 {
   align-items: center;
 }
 
-.nav-main-content:hover .nav-link {
+.nav-main-content:hover .nav-link,
+.nav-admin-content:hover .nav-link {
   color: #ffffff;
 }
 
@@ -137,13 +143,6 @@ section h4 {
 .nav-admin-content:hover {
   border-left: 2px solid #00C5ED;
   background-color: #30394A;
-}
-
-
-/*NAV ADMIN CONTENT*/
-
-.nav-admin-content:hover .nav-link {
-  color: #ffffff;
 }
 
 
@@ -202,6 +201,9 @@ input[type="checkbox"] {
 #exec-chkbox[type="checkbox"]:checked+label:after {
   font-weight: bold;
 }
+
+
+/*MAIN CONTENT*/
 
 .main-container {
   width: 100%;
@@ -618,10 +620,8 @@ th h5 {
 }
 
 
-/* INTERIOR ASIDE */
-
-
-/* SOCIAL LINKS */
+/*INTERIOR ASIDE
+ SOCIAL LINKS */
 
 .interior-aside-container {
   display: flex;
@@ -638,11 +638,6 @@ th h5 {
   width: 90%;
   justify-content: center;
   align-items: center;
-}
-
-.facebook {
-  color: #FFF;
-  background-color: #3C5A99;
 }
 
 .social-text {

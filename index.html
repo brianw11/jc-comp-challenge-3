@@ -8,105 +8,86 @@
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
-  <title>Some Cheesy HR Site</title>
+  <title>Join the Parks & Rec team!</title>
 </head>
 
 <body>
   <aside class="nav-aside">
-    <nav class="nav-container">
-
-
-
+    <nav class="nav-container" role="navigation">
       <div class="user-block">
         <div class="user-image" alt="Avatar image of the currently logged in user"></div>
         <p class="user-info">
           <h6 class="user-name">Andy Dwyer <i class="fa fa-chevron-down fa-1x user-dropdown" aria-hidden="true" aria-label="Home"></i></h6>
         </p>
       </div>
-
       <section class="nav-main">
         <h4>Main</h4>
         <div class="nav-main-content nav-home">
           <i class="fa fa-home fa-1x nav-icon" aria-hidden="true" aria-label="Home"></i>
           <a href="#" class="nav-link">Home</a>
         </div>
-
         <div class="nav-main-content nav-jobs">
           <i class="fa fa-briefcase nav-icon" aria-hidden="true" aria-label="Jobs"></i>
           <a href="#" class="nav-link">Jobs</a>
         </div>
-
         <div class="nav-main-content nav-resumes">
           <i class="fa fa-file-text nav-icon" aria-hidden="true" aria-label="Resumes"></i>
           <a href="#" class="nav-link">Resumes</a>
         </div>
-
         <div class="nav-main-content nav-skills">
           <i class="fa fa-tasks nav-icon" aria-hidden="true" aria-label="Skills"></i>
           <a href="#" class="nav-link">Skills</a>
         </div>
-
         <div class="nav-main-content nav-calendar">
           <i class="fa fa-calendar nav-icon" aria-hidden="true" aria-label="Calendar"></i>
           <a href="#" class="nav-link">Calendar</a>
         </div>
       </section>
-
       <section class="nav-admin">
         <h4>Admin</h4>
         <div class="nav-admin-content nav-users">
           <i class="fa fa-users nav-icon" aria-hidden="true" aria-label="Users"></i>
           <a href="#" class="nav-link">Users</a>
         </div>
-
         <div class="nav-admin-content nav-locations">
           <i class="fa fa-map-marker nav-icon" aria-hidden="true" aria-label="Locations"></i>
           <a href="#" class="nav-link">Locations</a>
         </div>
-
         <div class="nav-admin-content nav-archenemies">
           <i class="fa fa-sitemap nav-icon" aria-hidden="true" aria-label="Workflows"></i>
           <a href="#" class="nav-link">Workflows</a>
         </div>
-
         <div class="nav-admin-content nav-listings nav-selected">
           <i class="fa fa-newspaper-o nav-icon" aria-hidden="true" aria-label="Listings" aria-selected="true"></i>
           <a href="#" class="nav-link nav-link-listings">Job Listings</a>
         </div>
-
         <div class="nav-admin-content nav-social">
           <i class="fa fa-share-alt nav-icon" aria-hidden="true" aria-label="Social"></i>
           <a href="#" class="nav-link">Social</a>
         </div>
       </section>
-
       <section class="nav-categories">
         <h4>Categories</h4>
         <div class="checkboxes" aria-checked="true">
           <input type="checkbox" id="admin-chkbox" name="cb" aria-hidden="true" aria-label="Administrative">
           <label for="admin-chkbox"><a href="#" class="nav-link checkbox">Administrative</a></label>
         </div>
-
         <div class="checkboxes">
           <input type="checkbox" id="design-chkbox" name="cb" aria-hidden="true" aria-label="Design">
           <label for="design-chkbox"><a href="#" class="nav-link checkbox">Design</a></label>
         </div>
-
         <div class="checkboxes">
           <input type="checkbox" id="hr-chkbox" name="cb" aria-hidden="true" aria-label="Human Resources">
           <label for="hr-chkbox"><a href="#" class="nav-link checkbox">Human Resources</a></label>
         </div>
-
         <div class="checkboxes">
           <input type="checkbox" id="exec-chkbox" name="cb" aria-hidden="true" aria-label="Executive">
           <label for="exec-chkbox"><a href="#" class="nav-link checkbox">Executive</a></label>
         </div>
       </section>
-
     </nav>
-
   </aside>
-  <main class="main-container">
+  <main class="main-container" role="main">
     <header class="head-container">
       <div class="header-icon menu-btn">
         <i class="fa fa-bars fa-1x" aria-hidden="true" aria-label="Expand the nav menu"></i>
@@ -114,7 +95,7 @@
       <div class="header-icon search-btn">
         <i class="fa fa-search fa-1x" aria-hidden="true" aria-label="Search the site"></i>
       </div>
-      <input type="text" name="search" value="" placeholder="Search for a job, resume or task" class="search-input" />
+      <input type="text" name="search" value="" placeholder="Search for a job, resume or task" class="search-input" role="search" />
       <div class="header-icon add-user-btn">
         <i class="fa fa-user-plus fa-1x" aria-hidden="true" aria-label="Add new user"></i>
       </div>
@@ -128,16 +109,16 @@
         <i class="fa fa-chevron-left fa-1x" aria-hidden="true" aria-label="Expand the menu"></i>
       </div>
     </header>
-    <section class="job-container">
+    <section class="job-container" role="heading">
       <div class="title-container">
         <h2 class="job-title">Park Ranger</h2>
         <p class="job-location"><i class="fa fa-map-marker" aria-hidden="true" aria-label="Dropdown menu"></i> Pawnee, IA - <a href="#">Preview this post</a></p>
       </div>
       <div class="job-actions-container">
-        <button type="button" name="open-btn" class="action-btn job-open-btn"><i class="fa fa-circle fa-1x job-open-btn-icon" aria-hidden="true"></i> OPEN</button>
-        <button type="button" name="bookmark-btn" class="action-btn job-bookmark-btn"><i class="fa fa-bookmark fa-1x" aria-hidden="true"></i></button>
-        <button type="button" name="edit-btn" class="action-btn job-edit-btn"><i class="fa fa-pencil fa-1x" aria-hidden="true"></i></button>
-        <button type="button" name="delete-btn" class="action-btn job-delete-btn"><i class="fa fa-trash fa-1x" aria-hidden="true"></i></button>
+        <button type="button" name="open-btn" class="action-btn job-open-btn"><i class="fa fa-circle fa-1x job-open-btn-icon" aria-hidden="true" aria-label="Job listing status"></i> OPEN</button>
+        <button type="button" name="bookmark-btn" class="action-btn job-bookmark-btn"><i class="fa fa-bookmark fa-1x" aria-hidden="true" aria-label="Bookmark job listing"></i></button>
+        <button type="button" name="edit-btn" class="action-btn job-edit-btn"><i class="fa fa-pencil fa-1x" aria-hidden="true" aria-label="Edit job listing"></i></button>
+        <button type="button" name="delete-btn" class="action-btn job-delete-btn"><i class="fa fa-trash fa-1x" aria-hidden="true" aria-label="Delete job listing"></i></button>
       </div>
 
       <div class="content-tabs-container" role="navigation">
@@ -251,7 +232,7 @@
         </tbody>
       </table>
 
-      <aside class="interior-aside-container">
+      <aside class="interior-aside-container" role="complementary">
         <div class="social-btn-container">
           <button type="button" name="facebook-btn" class="social-btn facebook-btn"><i class="fa fa-facebook fa-1x social-icon" aria-hidden="true" aria-label="Facebook link"></i> Post to Facebook</button>
           <button type="button" name="twitter-btn" class="social-btn twitter-btn"><i class="fa fa-twitter fa-1x social-icon" aria-hidden="true" aria-label="Twitter link"></i> Tweet this Job</button>
