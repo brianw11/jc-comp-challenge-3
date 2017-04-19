@@ -59,9 +59,9 @@ a {
 
 .user-name,
 .user-dropdown {
+  text-align: center;
   color: #a9b4c6;
   font-size: 14px;
-  text-align: center;
 }
 
 .user-name {
@@ -69,10 +69,10 @@ a {
 }
 
 .user-dropdown {
-  font-size: 8px;
+  margin: 0 5px;
   /*border: 1px solid red;*/
   border-radius: 100%;
-  margin: 0 5px;
+  font-size: 8px;
 }
 
 .user-dropdown:hover {
@@ -85,8 +85,8 @@ a {
 }
 
 .nav-selected {
-  background-color: #30394A;
   border-left: 2px solid #00C5ED;
+  background-color: #30394A;
 }
 
 section h4 {
@@ -116,6 +116,10 @@ section h4 {
   line-height: 300%;
 }
 
+.checkbox {
+  margin-left: 8px;
+}
+
 .nav-main-content,
 .nav-admin-content {
   display: flex;
@@ -131,8 +135,8 @@ section h4 {
 
 .nav-main-content:hover,
 .nav-admin-content:hover {
-  background-color: #30394A;
   border-left: 2px solid #00C5ED;
+  background-color: #30394A;
 }
 
 
@@ -140,6 +144,63 @@ section h4 {
 
 .nav-admin-content:hover .nav-link {
   color: #ffffff;
+}
+
+
+/* NAV CHECKBOXES */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#admin-chkbox[type="checkbox"]+label:before,
+#design-chkbox[type="checkbox"]+label:before,
+#hr-chkbox[type="checkbox"]+label:before,
+#exec-chkbox[type="checkbox"]+label:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 3px;
+  padding: 0;
+  content: "\00a0";
+  border: 1px solid #7f83a2;
+  font: 16px/1em sans-serif;
+}
+
+#admin-chkbox[type="checkbox"]:checked+label:before,
+#design-chkbox[type="checkbox"]:checked+label:before,
+#hr-chkbox[type="checkbox"]:checked+label:before,
+#exec-chkbox[type="checkbox"]:checked+label:before {
+  content: "\2713";
+  text-align: center;
+  color: #666;
+}
+
+#admin-chkbox[type="checkbox"]+label:before,
+#admin-chkbox[type="checkbox"]:checked+label:before {
+  background: #ffff33;
+}
+
+#design-chkbox[type="checkbox"]+label:before,
+#design-chkbox[type="checkbox"]:checked+label:before {
+  background: #cc9999;
+}
+
+#hr-chkbox[type="checkbox"]+label:before,
+#hr-chkbox[type="checkbox"]:checked+label:before {
+  background: #99ffff;
+}
+
+#exec-chkbox[type="checkbox"]+label:before,
+#exec-chkbox[type="checkbox"]:checked+label:before {
+  background: #00ff33;
+}
+
+#admin-chkbox[type="checkbox"]:checked+label:after,
+#design-chkbox[type="checkbox"]:checked+label:after,
+#hr-chkbox[type="checkbox"]:checked+label:after,
+#exec-chkbox[type="checkbox"]:checked+label:after {
+  font-weight: bold;
 }
 
 .main-container {
@@ -226,13 +287,13 @@ section h4 {
 }
 
 .job-title {
+  overflow: hidden;
   margin: 10px 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #354052;
   font-size: 24px;
   font-weight: 400;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .job-location {
@@ -282,8 +343,8 @@ section h4 {
 
 .content-tabs-container {
   display: flex;
-  margin-top: 10px;
   width: 100%;
+  margin-top: 10px;
   border-bottom: 3px solid #e6e9ef;
   justify-content: space-between;
 }
@@ -478,10 +539,10 @@ table {
 }
 
 th {
-  background-color: #6F7E95;
-  border-radius: 2px 2px 0 0;
-  text-align: left;
   padding: 15px 0 15px 30px;
+  text-align: left;
+  border-radius: 2px 2px 0 0;
+  background-color: #6F7E95;
 }
 
 .table-edit {
@@ -762,19 +823,12 @@ th h5 {
   table {
     width: 90%;
   }
-  /*tbody {
-    padding: 0 20px;
-  }*/
   tr {
     display: table-row;
-    /*flex-direction: row;*/
-  }
-  td {
-    /*border-bottom: 1px solid #E6E9EF;*/
   }
   .table-spacing {
-    width: 2%;
     display: table-cell;
+    width: 2%;
     border: none;
   }
   .table-lead {
@@ -784,21 +838,20 @@ th h5 {
   }
   .table-info {
     width: 60%;
-    line-height: 145%;
-    font-weight: 300;
-    color: #354052;
-    /*padding-right: 30px;*/
     padding: 10px 20px;
+    color: #354052;
+    font-weight: 300;
+    line-height: 145%;
   }
   .hiring-lead {
     display: inline-block;
-    height: 50px;
     width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 100%;
     background: url(../img/hiring-lead.jpg) no-repeat;
     background-size: cover;
-    border-radius: 100%;
-    vertical-align: middle;
-    margin-right: 15px;
   }
 }
 
